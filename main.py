@@ -8,18 +8,7 @@ pygame.font.init()
 WINDOW = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Bubble sort visualizer")
 FPS = 60
-labels = []
 
-
-def create_label(font, text, coordinates):
-    label = font.render(text, 1, (255,255,255))
-    labels.append((label, coordinates))
-    return label
-
-
-def show_labels():
-    for label, coordinates in labels:
-        WINDOW.blit(label, coordinates)
 
 def main():
     run = True
